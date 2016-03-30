@@ -1,0 +1,142 @@
+{% extends "templates/base.html" %}
+{% block title %} 
+<title>Gallery</title>
+
+{%endblock%}
+
+{% block h2 %} 
+
+<h2>Congratulations!</h2>
+{%endblock%}
+{% block content %} 
+
+<div class="row">
+	<div class="col-xs-12 col-sm-4">
+		<div class="col-xs-2 col-sm-1"></div>
+		<div class="col-xs-8 col-sm-10">
+		    <div class="hovereffect_gallery">
+		        <img class="img-responsive" src="static/pockets_me.jpg" alt="Picture of Pockets and Me">
+		        <div class="overlay">
+		           <h2>Pockets</h2>
+		        </div>
+		    </div>
+		<div class="col-xs-2 col-sm-1"></div>
+		</div>
+	</div>
+
+	<div class="col-xs-12 col-sm-4">
+		<div class="col-xs-2 col-sm-1"></div>
+		<div class="col-xs-8 col-sm-10">
+		    <div class="hovereffect_gallery">
+		        <img class="img-responsive" src="static/tony_pony.jpg" alt="Picture of Tony">
+		        <div class="overlay">
+		           <h2>Tony: Windermere's Mini Pony</h2>
+		        </div>
+		    </div>
+		<div class="col-xs-2 col-sm-1"></div>
+		</div>
+	</div>
+
+	<div class="col-xs-12 col-sm-4">
+		<div class="col-xs-2 col-sm-1"></div>
+		<div class="col-xs-8 col-sm-10">
+		    <div class="hovereffect_gallery">
+		        <img class="img-responsive" src="static/fancy_me.jpg" alt="Picture of Fancy and Me">
+		        <div class="overlay">
+		           <h2>Fancy</h2>
+		        </div>
+		    </div>
+		<div class="col-xs-2 col-sm-1"></div>
+		</div>
+	</div>
+</div>	
+
+<div class="row">
+	<div class="col-xs-12 col-sm-4">
+		<div class="col-xs-2 col-sm-1"></div>
+		<div class="col-xs-8 col-sm-10">
+		    <div class="hovereffect_gallery">
+		        <img class="img-responsive" src="static/diamond.jpg" alt="Picture of Diamond">
+		        <div class="overlay">
+		           <h2>Diamond</h2>
+		        </div>
+		    </div>
+		<div class="col-xs-2 col-sm-1"></div>
+		</div>
+	</div>
+
+	<div class="col-xs-12 col-sm-4">
+		<div class="col-xs-2 col-sm-1"></div>
+		<div class="col-xs-8 col-sm-10">
+		    <div class="hovereffect_gallery">
+		        <img class="img-responsive" src="static/desi_2.jpg" alt="Picture of Desi">
+		        <div class="overlay">
+		           <h2>Desi</h2>
+		        </div>
+		    </div>
+		<div class="col-xs-2 col-sm-1"></div>
+		</div>
+	</div>
+
+	<div class="col-xs-12 col-sm-4">
+		<div class="col-xs-2 col-sm-1"></div>
+		<div class="col-xs-8 col-sm-10">
+		    <div class="hovereffect_gallery">
+		        <img class="img-responsive" src="static/sky.jpg" alt="Picture of Sky">
+		        <div class="overlay">
+		           <h2>Sky</h2>
+		        </div>
+		    </div>
+		<div class="col-xs-2 col-sm-1"></div>
+		</div>
+	</div>
+</div>	
+
+<div class="row">
+	<div class="col-xs-12 col-sm-4">
+		<div class="col-xs-2 col-sm-1"></div>
+		<div class="col-xs-8 col-sm-10">
+		    <div class="hovereffect_gallery">
+		        <img class="img-responsive" src="static/dennis_me.jpg" alt="Picture of Dennis and Me">
+		        <div class="overlay">
+		           <h2>Dennis</h2>
+		        </div>
+		    </div>
+		<div class="col-xs-2 col-sm-1"></div>
+		</div>
+	</div>
+
+	<div class="col-xs-12 col-sm-4">
+		<div class="col-xs-2 col-sm-1"></div>
+		<div class="col-xs-8 col-sm-10">
+		    <div class="hovereffect_gallery">
+		        <img class="img-responsive" src="static/fancy.jpg" alt="Picture of Fancy">
+		        <div class="overlay">
+		           <h2>Fancy</h2>
+		        </div>
+		    </div>
+		<div class="col-xs-2 col-sm-1"></div>
+		</div>
+	</div>
+
+	<div class="col-xs-12 col-sm-4">
+		<div class="col-xs-2 col-sm-1"></div>
+		<div class="col-xs-8 col-sm-10">
+		    <div class="hovereffect_gallery">
+		        <img class="img-responsive" src="static/riding_sneakers.jpg" alt="Picture of Me riding Sneakers">
+		        <div class="overlay">
+		           <h2>Sneakers</h2>
+		        </div>
+		    </div>
+		<div class="col-xs-2 col-sm-1"></div>
+		</div>
+	</div>
+</div>	
+
+<script>
+$('.overlay').click(function() {
+    $(this).css('visibility','visible');
+})
+</script>
+
+{%endblock%}

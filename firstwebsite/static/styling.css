@@ -1,0 +1,383 @@
+/*GENERAL BACKGROUND*/
+
+body{
+	background: url(si_background.png);
+}
+
+/*MOBILE+ HEADER*/
+
+#header_pic {
+	background: url(jumps_background.jpg) center;
+	background-size: cover;
+}
+
+.col-sm-3{
+	display: none;
+}
+
+.col-sm-7{
+  text-align: center;
+  padding-top: 3vmax;
+  color: #f3639b;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/*CONTENT STYLING*/
+
+img{
+  border-radius: 10px;
+}
+
+h4{
+  text-align: center;
+}
+
+p{
+  text-align: center
+}
+
+a{
+  color: #c94072;
+}
+
+#form{
+  text-align: center;
+}
+
+/*SPACING BETWEEN ROWS OF COLUMNS*/
+
+.row{
+  padding-bottom: 30px;
+}
+
+/*SAME HEIGHT*/
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
+
+/*HOMEPAGE SKY PIC*/
+.jumbotron {
+  background-image:url(sky_homepage.jpg);
+  height: 500px;
+  background-size: cover;
+}
+
+.jumbotron .container {
+  position: relative;
+  top:100px;
+}
+
+.jumbotron h1 {
+  color: #f3639b;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 60px;  
+  font-family: 'Shift', sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.jumbotron p {
+  font-size: 30px;
+
+  color: #f3639b;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-align: center;
+}
+
+/*COLUMN BACKGROUND*/
+
+.col-sm-11 {
+	background-color: #dcd9de;
+	border: 1px solid white;
+	border-radius: 10px; 
+}
+
+.col-sm-8{
+	background-color: #dcd9de;
+	border: 1px solid white;
+	border-radius: 10px; 
+}
+
+
+/*FOOTER STUFF*/
+/*!!!!!!!!!!!!!!!!!!!WHAT DOES The "height" of the content must vary.  I want to see how your footer looks on pages that require scrolling and those that don't" MEAN???!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.social {
+    margin: 0;
+    padding: 0;
+    text-align: center
+}
+
+.social ul {
+    margin: 0;
+    padding: 5px; 
+}
+
+.social ul li {
+    margin: 5px;
+    list-style: none outside none;
+    display: inline-block;
+}
+
+.social i {
+    width: 50px;
+    height: 50px;
+    color: #FFF;
+    background-color: #909AA0;
+    font-size: 30px;
+    text-align:center;
+    padding-top: 15px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+}
+
+.social i:hover {
+    color: #FFF;
+    text-decoration: none;
+    transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+}
+
+.social .fa-facebook:hover { /* round facebook icon*/
+    background: #4060A5;
+}
+
+.social .fa-twitter:hover { /* round twitter icon*/
+    background: #00ABE3;
+}
+
+.social .fa-instagram:hover { /* round instagram icon*/
+    background: #375989;
+}
+
+.social .fa-youtube-play:hover { /* round youtube play button icon*/
+    background: #DF192A;
+}
+
+/*HOVER PICTURES - WHERE IT BEGAN: CLICKABLE ON MOBILE/TABLET*/
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  border-radius: 10px;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
+  filter: grayscale(1) blur(3px);
+  -webkit-filter: grayscale(1) blur(3px);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hovereffect a.info {
+  display: inline-block;
+  margin: 50px 0 0 0;
+  text-decoration: none;
+  padding: 7px 14px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  font-size: 60%;
+}
+
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+.hovereffect a.info, .hovereffect h2 {
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  color: #f3639b;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-transform: uppercase;
+}
+
+.hovereffect:hover a.info, .hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+/*GALLERY HOVER EFFECTS: CLICKABLE ON MOBILE AND TABLET ( )*/
+
+.hovereffect_gallery {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  border-radius: 10px;
+}
+
+.hovereffect_gallery .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  padding-top: 4vmax;
+}
+
+.hovereffect_gallery img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+
+.hovereffect_gallery:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
+  filter: grayscale(1) blur(3px);
+  -webkit-filter: grayscale(1) blur(3px);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.hovereffect_gallery h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  color: #f3639b;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-transform: uppercase;
+
+}
+
+.hovereffect_gallery:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+@media only screen and (min-width: 768px){
+  .hovereffect a.info {
+    font-size: 1vmax;
+    margin: 0px;
+  }
+  .hovereffect h2 {
+    padding: 0px;
+  }
+
+  /*TABLET HEADER*/
+
+  .jumbotron p {
+  font-size: 40px;
+  }
+
+  .col-sm-3{
+    display: inline;
+    padding-top: 4vmax;
+  }
+
+  .col-sm-3 img{
+    border: 4px solid #c94072;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .col-sm-7{
+    padding-top: 10vmax;
+  }
+
+  /*TABLET+ FLOATING FOOTER*/
+
+  .social i {
+    width: 80px;
+    height: 80px;
+    font-size: 65px;
+  }  
+
+  #footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  body {
+    margin-bottom: 125px;
+  }
+}
+
+@media only screen and (min-width: 992px){
+
+  /*DESKTOP HEADER*/
+ 
+  .col-sm-7{
+    padding-top: 1vmax;
+  }
+
+
+  /*PICS*/
+  .hovereffect a.info{
+    margin-top: 20%;
+  }
+
+}

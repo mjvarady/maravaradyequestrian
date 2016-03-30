@@ -1,0 +1,123 @@
+{% extends "templates/base.html" %}
+{% block title %} 
+<title>Quiz</title>
+
+{%endblock%}
+
+{% block h2 %} 
+
+<h2>Get everything right to unlock the gallery!</h2>
+{%endblock%}
+
+{% block content %} 
+
+
+
+<div class="row">
+	<div class="col-sm-2"></div>
+	<div class="col-sm-8">
+		</br>{{msg}}</br></br>
+		<form method="post" action="" name="form" id="form">
+			<label>Question 1: </br> At what age did I start riding? </br> <label><input type='checkbox' onclick='handleClick(this);' name="question1" >Need Help?</label><span id="q1"></span></br><input type = "text" name = "q1" value="seven" required></label><br/>
+
+			<label>Question 2: </br> What is my all time favorite horse's name? </br> <label><input type='checkbox' onclick='handleClick(this);' name="question2" >Need Help?</label><span id="q2"></span></br> <input type = "text" name = "q2" value="Desi" required></label><br/>
+
+			<label>Question 3: </br> What barn do I ride at when I'm home? </br> <label><input type='checkbox' onclick='handleClick(this);' name="question3" >Need Help?</label><span id="q3"></span></br> <input type = "text" name = "q3" value="Windermere Equestrian Center" required></label><br/>
+
+			<label>Question 4: </br> Who teaches my riding lessons when I'm home? </br> <label><input type='checkbox' onclick='handleClick(this);' name="question4" >Need Help?</label><span id="q4"></span></br> <input type = "text" name = "q4" value="Cassie" required></label><br/>
+
+			<label>Question 5: </br> On top of webmaster, what officer position do I have on the equestrian team next year? </br> <label><input type='checkbox' onclick='handleClick(this);' name="question5" >Need Help?</label><span id="q5"></span></br> <input type = "text" name = "q5" value="Points Secretary" required></label><br/>
+
+			<label>Question 6: </br> What color should your show breeches be? </br> <label><input type='checkbox' onclick='handleClick(this);' name="question6" >Need Help?</label><span id="q6"></span></br> <input type = "text" name = "q6" value="tan" required></label><br/>
+
+			<label>Question 7: </br> The basic equipment you should own in the begining are: heeled boots, breeches and a ______? </br> <label><input type='checkbox' onclick='handleClick(this);' name="question7" >Need Help?</label><span id="q7"></span></br> <input type = "text" name = "q7" value="helmet" required></label><br/>
+
+			<label>Question 8: </br> What site do I mention for good deals on riding apparel/equipment? </br> <label><input type='checkbox' onclick='handleClick(this);' name="question8" >Need Help?</label><span id="q8"></span></br> <input type = "text" name = "q8" value="Dover Saddlery" required></label><br/>
+
+			<label>Question 9: </br> What style of riding do I compete in? </br> <label><input type='checkbox' onclick='handleClick(this);' name="question9" >Need Help?</label><span id="q9"></span></br> <input type = "text" name = "q9" value="hunter/jumper" required></label><br/>
+
+			<label>Question 10: </br> What was the name of the horse I first showed on? </br> <label><input type='checkbox' onclick='handleClick(this);' name="question10" >Need Help?</label><span id="q10"></span></br> <input type = "text" name = "q10" value="Misty" required></label><br/>
+
+				<p><input type="submit" value = "Submit to see the Gallery"></p>
+		</form>
+	</div>
+	<div class="col-sm-2"></div>
+</div>
+
+<!-- PERSONAL JS -->
+<script type="text/javascript">
+	function handleClick() {
+		if (document.form.question1.checked == true){
+			document.getElementById("q1").innerHTML = "  The answer is: seven";
+		}
+		else{
+			document.getElementById("q1").innerHTML = "";
+		}
+
+		if (document.form.question2.checked == true){
+			document.getElementById("q2").innerHTML = "  The answer is: Desi";
+		}
+		else{
+			document.getElementById("q2").innerHTML = "";
+		}
+
+		if (document.form.question3.checked == true){
+			document.getElementById("q3").innerHTML = "  The answer is: Windermere Equestrian Center";
+		}
+		else{
+			document.getElementById("q3").innerHTML = "";
+		}
+
+		if (document.form.question4.checked == true){
+			document.getElementById("q4").innerHTML = "  The answer is: Cassie";
+		}
+		else{
+			document.getElementById("q4").innerHTML = "";
+		}
+
+		if (document.form.question5.checked == true){
+			document.getElementById("q5").innerHTML = "  The answer is: Points Secretary";
+		}
+		else{
+			document.getElementById("q5").innerHTML = "";
+		}
+
+		if (document.form.question6.checked == true){
+			document.getElementById("q6").innerHTML = "  The answer is: tan";
+		}
+		else{
+			document.getElementById("q6").innerHTML = "";
+		}
+
+		if (document.form.question7.checked == true){
+			document.getElementById("q7").innerHTML = "  The answer is: helmet";
+		}
+		else{
+			document.getElementById("q7").innerHTML = "";
+		}
+
+		if (document.form.question8.checked == true){
+			document.getElementById("q8").innerHTML = "  The answer is: Dover Saddlery";
+		}
+		else{
+			document.getElementById("q8").innerHTML = "";
+		}
+
+		if (document.form.question9.checked == true){
+			document.getElementById("q9").innerHTML = "  The answer is: hunter/jumper";
+		}
+		else{
+			document.getElementById("q9").innerHTML = "";
+		}
+
+		if (document.form.question10.checked == true){
+			document.getElementById("q10").innerHTML = "  The answer is: Misty";
+		}
+		else{
+			document.getElementById("q10").innerHTML = "";
+		}
+  		
+  	}
+</script>
+
+{%endblock%}

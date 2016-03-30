@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- BOOTSTRAP -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!--load font awesome-->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<!-- PERSONAL STYLE SHEET!!! -->
+	<link rel="stylesheet" type = "text/css" href="static/styling.css">
+
+
+	{% block title %}	
+	I should never see this content.  It should be replaced.
+	{% endblock %}
+
+</head>
+<body>
+
+	<div class="container-fluid" id="header_pic">
+		<header>
+			<div class="row">
+				<div class="col-sm-1 col-md-5"></div>
+				<div class="col-sm-3 col-md-2">
+					<p><img src = "static/sneakers_kiss.jpg" class = "img-responsive" alt = "Sneakers Kiss Pic"/></p>
+				</div>
+				<div class="col-sm-7 col-md-12">
+					<h1>Mara Varady - Equestrian</h1>
+					{% block h2 %}	
+					I should never see this content.  It should be replaced.
+					{% endblock %}
+				</div>
+			</div>
+		</header>
+	</div>
+
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+
+
+			<!-- Logo -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="homepage.html" class="navbar-brand">MARA VARADY</a>
+			</div>
+
+			 <!-- Menu -->
+			 <div class="collapse navbar-collapse" id="mainNavBar">
+				<ul class="nav navbar-nav">
+
+					{%if current == "/home.html"%}
+						<li class="active"><a href="home.html">HOME</a></li>
+					{%else%}	
+						<li><a href="home.html">Home</a></li>	
+					{%endif%}
+
+					{%if current == "/team.html" %}
+						<li class="active"><a href="team.html">MICHIGAN EQUESTRIAN TEAM</a></li>
+					{%else%}	
+						<li><a href="team.html">Michigan Equestrian Team</a></li>
+					{%endif%}	
+
+					{% if current == "/began.html" %}
+						<li class="active"><a href="began.html">WHERE IT ALL BEGAN</a></li>
+					{%else%}
+						<li><a href="began.html">Where It All Began</a></li>
+					{%endif%}
+
+					{% if current == "/why.html" %}
+						<li class="active"><a href="why.html">WHY RIDE?</a></li>
+					{%else%}
+						<li><a href="why.html">Why Ride?</a></li>
+					{%endif%}
+
+					{% if current == "/quiz.html" %}
+						<li class = "active"><a href="quiz.html">QUIZ (gallery)</a></li>
+					{%else%}
+						<li><a href="quiz.html">Quiz (gallery)</a></li>
+					{%endif%}		
+				</ul>	
+			</div>
+		</div>	
+	</nav>	
+
+	{% block content %}	
+	I should never see this content.  It should be replaced.
+	{% endblock %}
+
+	<footer id="footer">
+		<div class="social">
+		    <ul>
+		        <li><a href="https://www.facebook.com/maravarady"><i class="fa fa-lg fa-facebook"></i></a></li>
+		        <li><a href="https://twitter.com/mara_supial"><i class="fa fa-lg fa-twitter"></i></a></li>
+		        <li><a href="https://www.instagram.com/mara_supial/"><i class="fa fa-lg fa-instagram"></i></a></li>
+		        <li><a href="https://www.youtube.com/channel/UCRBU2mZzaDrxGF661-VS0MA"><i class="fa fa-lg fa-youtube-play"></i></a></li>
+		    </ul>
+		    &copy; 2016 by Mara Varady
+		</div>
+	</footer>
+	
+</body>
+</html>	
